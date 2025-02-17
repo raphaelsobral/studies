@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 8%);
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    width: 85vw;
+    border-radius: 12px;
+}
+
+.card .header, .links {
+   text-align: center;
+}
+
+.card img {
+    border-radius: 50%;
+    height: 95px;
+    margin: 30px 30px 10px 30px;
+}
+
+h1 {
+    color: white;
+    font-weight: 500;
+    margin: 5px;
+    font-size: 1.8em;
+}
+
+h2 {
+    color: hsl(75, 94%, 57%);
+    font-weight: 500;
+    font-size: 1em;
+    margin: 5px;
+}
+
+p {
+    margin: 20px 20px;
+    font-size: 0.87em;
+    max-width: 300px;
+    color: rgb(216, 216, 216);
+}
+
+.links li {
+    text-align: center;
+    list-style-type: none;
+    margin: 16px 25px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 8px;
+}
+
+.links a{
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+}
+
+.links .none:hover {
+    background-color: #F7432A;
+}
+
+.links a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+    transition: 0.4s;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: rgb(208, 208, 208);
+    margin-top: 5px;
+}
+.attribution a { 
+    color: hsl(228, 51%, 60%); 
+}
+
+@media only screen and (min-width: 376px){
+    .card {
+        max-width: 320px;
+    }
+}
