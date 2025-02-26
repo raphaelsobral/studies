@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken Grotesk";
+    box-sizing: border-box;
+}
+
+body, main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.test {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 100vw;
+    padding: 10px;
+    border-radius: 0 0 35px 35px; 
+}
+
+h1 {
+    color: hsl(241, 100%, 89%);
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+}
+
+.test-results {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100%;
+    min-height: 150px;
+    min-width: 150px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    margin-bottom: 10px;
+}
+
+.test-results .score {
+    color: white;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.test-results p {
+    color:hsla(241, 100%, 89%, 0.68);
+    font-size: 1.2em;
+}
+
+.test > .score {
+    color: white;
+    font-size: 1.6em;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.test > p {
+    color: hsl(241, 100%, 89%);
+    font-size: 1.12em;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.summary {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw; 
+    padding: 0 20px;
+}
+
+.summary h2 {
+    color: hsl(224, 30%, 27%);
+    font-size: 1.3em;
+    margin: 20px 5px 10px 5px;
+}
+
+.summary-score {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 17px;
+    border-radius: 10px;
+    font-size: 1.12em;
+    margin: 10px;
+}
+
+.summary-score img{
+    margin-right: 10px;
+}
+
+.summary-score__results {
+    display: flex;
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color:  hsla(0, 100%, 67%, 0.065);
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.065);
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.065);
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.065);
+}
+
+.result {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+    margin-right: 8px;
+}
+
+.max {
+    color: hsla(224, 30%, 27%, 0.720);
+    font-weight: 800;
+}
+
+button {
+    padding: 15px;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:active {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 8px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 400px){
+    body {
+        background-color: hsl(221, 100%, 96%);
+    }
+   
+    .test {
+    max-width: 400px;
+   }
+
+   .summary {
+    max-width: 400px;
+   }
+}
+
+@media only screen and (min-width: 1200px){
+    body {
+        background-color: hsl(221, 100%, 96%);
+        height: 100vh;
+    }
+
+    main {
+        flex-direction: row;
+        height: 600px;
+        border-radius: 35px;
+    }
+
+    .test {
+        width: 420px;
+        height: 600px;
+        justify-content: center;
+        border-radius: 35px;
+    }
+
+    .test h1 {
+        font-size: 1.8em;
+        margin-top: -20px;
+    }
+
+    .test > .score {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .test p {
+        font-size: 1.3em;
+    }
+
+    .test-results {
+        height: 230px;
+        width: 230px;
+        margin: 20px;
+    }
+
+    .test-results .score {
+        font-size: 5em;
+    }
+
+    .test-results p {
+        font-size: 1.4em;
+    }
+
+    .summary {
+        width: 420px;
+        height: 600px;
+        background-color: white;
+        padding: 25px 32px;
+    }
+
+    .summary h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .summary-score {
+        font-size: 1.3em;
+    }
+
+    button {
+        margin-top: 40px;
+        padding: 22px;
+        font-size: 1.4em; 
+    }
+
+    button:hover {
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+    .attribution {  
+        margin-top: 20px;
+    }
+}
