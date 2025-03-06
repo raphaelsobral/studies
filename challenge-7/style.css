@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsla(215, 32%, 27%, 0.462);
+    --text-color: hsl(215, 51%, 70%);
+    --contrast-color: hsl(178, 100%, 50%);
+
+    --main-font: 'Outfit', verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+body, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--main-bg);
+} 
+
+.card {
+    width: 275px;
+    background-color: var(--card-bg);
+    padding: 26px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.nft {
+    position: relative;
+    border-radius: 15px;
+}
+
+.nft img {
+    border-radius: 8.5px;
+    width: 275px;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.44);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8.5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hidden img{
+    width: 50px;
+}
+
+.hidden a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft:hover .hidden {
+    opacity: 1;
+}
+
+h1 {
+    color: white;
+    margin: 16px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: var(--contrast-color);
+    transition-duration: 0.4s;
+}
+
+.text {
+    color: var(--text-color);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.inform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.price {
+    color: var(--contrast-color);
+    font-weight: 600;
+    display: flex;
+}
+
+.price img {
+    margin-right: 5px;
+}
+
+.date {
+    color: var(--text-color);
+    display: flex;
+}
+
+.date img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+hr {
+    background-color: var(--line-color);
+    border: none;
+    height: 2px;
+}
+
+.artist {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.artist img {
+    width: 35px;
+    padding: 1px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 4px 15px 0 0;
+}
+
+.artist .author {
+    color: white;
+    cursor: pointer;
+}
+
+.artist .author:hover {
+    color: var(--contrast-color);
+    transition-duration: 0.4s;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    color: gray;
+}
+
+.attribution a { 
+    color: hsl(228, 83%, 68%); 
+}
