@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --font: 'Red Hat Display', Verdana, sans-serif;
+    --main-color: hsl(245, 75%, 52%);
+    --active-main-color: hsl(245, 89%, 66%);
+    --bgd-color: hsl(225, 100%, 94%);
+    --p-color: hsl(224, 21%, 48%);
+    --darkest-color: hsl(223, 47%, 23%);
+    --price-bgd: hsl(225, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--bgd-color);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.card {
+    width: 330px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.card > img {
+    width: 330px;
+    border-radius: 28px 25px 0 0;
+}
+
+.card h1 {
+    color: var(--darkest-color);
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.content p {
+    color: var(--p-color);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--price-bgd);
+    padding: 12px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.price .plan {
+    color: var(--darkest-color);
+    font-weight: 900;
+}
+
+.price a {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+.price a:hover {
+    color: var(--active-main-color);
+}
+
+.proceed-button {
+    width: 100%;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.01em;
+    box-shadow: 0px 8px 19px 5px hsla(245, 75%, 52%, 0.31);
+    cursor: pointer;
+}
+
+.proceed-button:hover {
+    background-color: var(--active-main-color);
+    transition: 0.2s;
+}
+
+.cancel-button {
+    width: 100%;
+    border: none;
+    color: var(--p-color);
+    font-weight: 900;
+    font-size: 1em;
+    background-color: white;
+    margin: 26px 0 5px 0;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    color: var(--darkest-color);
+    transition: 0.2s;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 400px){
+    body, main {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+}
