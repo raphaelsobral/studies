@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-font: 'Big Shoulders', sans-serif; 
+    --main-font: 'Lexend Deca', Verdana, sans-serif;
+
+    --first-color: hsl(31, 77%, 52%);
+    --second-color: hsl(184, 100%, 22%);
+    --third-color: hsl(179, 100%, 13%);
+
+    --p-color: hsla(0, 0%, 100%, 0.805);
+    --main-color: hsl(0, 0%, 95%);
+}
+
+body, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--main-color);
+}
+
+
+.card {
+    width: 325px;
+}
+
+h1 {
+    font-family: var(--header-font);
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin: 20px  0;
+}
+
+p {
+    font-family: var(--main-font);
+    color: var(--p-color);
+    line-height: 1.7;
+    font-size: 0.9em;
+}
+
+button {
+    border: none;
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: var(--main-font);
+}
+
+.first {
+    background-color: var(--first-color);
+    padding: 50px;
+    border-radius: 5px 5px 0 0;
+}
+
+.first button {
+    color: var(--first-color);
+}
+
+.first button:active {
+    background-color: var(--first-color);
+    outline: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.second {
+    background-color: var(--second-color);
+    padding: 50px;
+}
+
+.second button {
+    color: var(--second-color);
+}
+
+.second button:active {
+    outline: 1px solid var(--main-color);
+    color: var(--main-color);
+    background-color: var(--second-color);
+}
+
+.third {
+    background-color: var(--third-color);
+    padding: 50px;
+    border-radius: 0 0 5px 5px;
+}
+
+.third button {
+    color: var(--third-color);
+}
+
+.third button:active {
+    outline: 1px solid var(--main-color);
+    color: var(--main-color);
+    background-color: var(--third-color);
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+    margin-top: 8px;
+    font-family: var(--main-font);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 1000px){
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 895px;
+    }
+
+    button {
+        margin-top: 95px;
+    }
+
+    .first {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .first button:hover {
+        color: var(--main-color);
+        background-color: var(--first-color);
+        outline: 2px solid var(--main-color);
+        transition-duration: 0.1s;
+    }
+
+    .second button:hover {
+        color: var(--main-color);
+        background-color: var(--second-color);
+        outline: 2px solid var(--main-color);
+        transition-duration: 0.1s;
+    }
+
+    .third {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .third button:hover {
+        color: var(--main-color);
+        background-color: var(--third-color);
+        outline: 2px solid var(--main-color);
+        transition-duration: 0.1s;
+    }
+
+}
