@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Click here to check it out!](https://raphaelsobral.github.io/studies/challenge-6/index.html)
+- Live Site URL: [Click here to check it out!](https://raphaelsobral.github.io/studies/challenge-006/index.html)
 
 ## My process
 

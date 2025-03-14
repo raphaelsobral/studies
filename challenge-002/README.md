@@ -7,6 +7,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -19,6 +20,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Screenshot
 
 ![Recipe screenshot](assets/images/screenshot-ch2.jpg)
+
+### Links
+
+- Live Site URL: [Check it here!](https://raphaelsobral.github.io/studies/challenge-002/index.html)
 
 ## My process
 

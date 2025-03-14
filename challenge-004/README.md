@@ -7,6 +7,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -25,7 +26,9 @@ Users should be able to:
 
 ![Screenshot result desktop active state](assets/images/scr.jpg)
 
-- Live Site URL: [Check it out here!](https://raphaelsobral.github.io/studies/challenge-4/index.html)
+### Links
+
+- Live Site URL: [Check it out here!](https://raphaelsobral.github.io/studies/challenge-004/index.html)
 
 ## My process
 

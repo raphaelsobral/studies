@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Check it out here!](https://raphaelsobral.github.io/studies/challenge-9/index.html)
+- Live Site URL: [Check it out here!](https://raphaelsobral.github.io/studies/challenge-010/index.html)
 
 ## My process
 

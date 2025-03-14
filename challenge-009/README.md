@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Check it here!](https://raphaelsobral.github.io/studies/challenge-9/index.html)
+- Live Site URL: [Check it here!](https://raphaelsobral.github.io/studies/challenge-009/index.html)
 
 ## My process
 

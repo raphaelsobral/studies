@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Click here to check it!](https://raphaelsobral.github.io/studies/challenge-5/index.html)
+- Live Site URL: [Click here to check it!](https://raphaelsobral.github.io/studies/challenge-005/index.html)
 
 ## My process
 

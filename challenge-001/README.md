@@ -20,6 +20,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ![Resolution screenshot](./images/screenshot-ch1.jpg)
 
+### Links
+
+- Live Site URL: [Check it here!](https://raphaelsobral.github.io/studies/challenge-001/index.html)
+
 ## My process
 
 ### Built with
