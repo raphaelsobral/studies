@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root {
+    --bgd-color: hsl(185, 75%, 39%);
+    --darkest-color: hsl(229, 23%, 23%);
+    --headings-color: hsl(227, 10%, 46%);
+    --line-color: hsla(0, 0%, 59%, 0.204);
+
+    --font: 'Kumbh Sans', sans-serif;
+}
+
+body, html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bgd-color);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-attachment: fixed, fixed;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -40em -58em, 30em 22em;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.card img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 100px;
+    margin: 90px 0 20px 0;
+}
+
+h1 {
+    font-size: 1.1em;
+    color: var(--darkest-color);
+    margin-bottom: 8px;
+}
+
+h1 > span {
+    margin-left: 5px;
+}
+
+span {
+    color: var(--headings-color);
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--darkest-color);
+}
+
+hr {
+    background-color: var(--line-color);
+    height: 0.1em;
+    width: 100%;
+    border: none;
+    margin: 30px 0 20px 0;
+}
+
+.stats {
+    display: flex;
+    margin: 5px 0 25px 0;
+}
+
+.stats div {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 25px;
+}
+
+.stats span {
+    font-size: 0.8em;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 5px;
+}
+
+.attribution a { 
+    color: hsl(240, 66%, 37%); 
+}
+
+@media only screen and (max-width: 600px) {
+    body, html {
+        background-position: -38em -28em, 10em 20em;
+        background-attachment: fixed;
+    }
+}
