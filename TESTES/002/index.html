@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            min-height: 90vh;
+        }
+
+        img{
+            height: 290px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>me dá carinho</h1>
+    <img src="images/looking.jpg" alt="">
+
+    <script>
+        const img = document.querySelector('img');
+        const h1 = document.querySelector('h1');
+
+        img.addEventListener('mouseout', () =>{
+            img.setAttribute('src', 'images/looking.jpg');
+            h1.innerText = 'me dá carinho';
+        })
+
+        img.addEventListener('mouseover', ()=>{
+            img.setAttribute('src', 'images/nop.jpg');
+            h1.innerText = 'sai pra lá';
+        })
+
+    </script>
+</body>
+</html>
