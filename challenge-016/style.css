@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+:root {
+  --darkest: hsl(217, 19%, 35%);
+  --mild: hsl(214, 17%, 51%);
+  --lightest: hsl(211, 32%, 82%);
+  --page-bgnd-color: hsl(210, 46%, 95%);
+
+  --font: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--page-bgnd-color);
+}
+
+main {
+  padding: 0 20px;
+}
+
+article {
+  max-width: 335px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+section {
+  padding: 30px 30px 0;
+  color: var(--darkest);
+}
+
+picture > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+h1 {
+  font-size: 1.05rem;
+}
+
+section > p {
+  font-size: 0.89rem;
+  line-height: 1.6em;
+  margin: 15px 0 15px;
+}
+
+.other-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--darkest);
+  padding: 0px 30px 9px;
+}
+
+.author > img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  line-height: 1.8em;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.date {
+  opacity: 80%;
+}
+
+#share {
+  border: none;
+  padding: 10px 11px;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #6e8098;
+}
+
+.attribution {
+  font-size: 0.79rem;
+  margin-top: 10px;
+}
+
+.clicked {
+  background-color: var(--darkest);
+  color: white;
+  border-radius: 0 0 8px 8px;
+  padding: 9px 30px 9px;
+}
+
+.clicked span {
+  font-size: 0.8em;
+  color: var(--lightest);
+  letter-spacing: 5px;
+}
+
+.on {
+  fill: white !important;
+  background-color: var(--mild);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+li {
+  padding: 10px 10px 5px;
+}
+
+.popover {
+    display: none;
+}
+
+@media screen and (min-width: 825px) {
+  article {
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  picture {
+    grid-column: 1/2;
+    grid-row: 1/-3;
+  }
+
+  picture > img {
+    border-radius: 8px 0 0 8px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  section > p {
+    font-size: 0.92rem;
+  }
+
+  .other-info {
+    grid-column: 2;
+    position: relative;
+  }
+
+  span {
+    font-size: 0.8em;
+    color: var(--lightest);
+    letter-spacing: 5px;
+  }
+
+  .popover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkest);
+    color: white;
+    border-radius: 8px;
+    width: 230px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 55%;
+    bottom: 120%;
+    z-index: 10;
+    opacity: 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.29);
+  }
+
+  .popover-tip {
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid var(--darkest);
+    bottom: -22%;
+    left: 68%;
+  }
+
+  .pop-on {
+    transition: 0.2s;
+    opacity: 1;
+  }
+}

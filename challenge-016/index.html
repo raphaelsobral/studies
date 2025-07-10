@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <main>
+      <article>
+        <picture>
+          <source media="(min-width: 825px)" srcset="images/drawers.jpg">
+          <img src="images/drawers-smaller.jpg" alt="green drawers on a white wall">
+        </picture>
+        <section>
+          <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+          </p>
+        </section>
+        <div class="other-info">
+          <div class="author">
+            <img src="images/avatar-michelle.jpg" alt="author's face">
+            <div>
+              <p class="name">Michelle Appleton</p>
+              <p class="date">28 Jun 2020</p>
+            </div>
+          </div>
+          <button id="share" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+          </button>
+          <div class="popover">
+            <span>SHARE</span>
+            <ul>
+                <li>
+                    <a href="https://web.facebook.com" target="_blank"><img src="images/icon-facebook.svg"></a>
+                </li>
+                <li>
+                    <a href="https://x.com" target="_blank"><img src="images/icon-twitter.svg" ></a>
+                </li>
+                <li>
+                    <a href="https://pinterest.com/" target="_blank"><img src="images/icon-pinterest.svg"></a>
+                </li>
+            </ul>
+            <div class="popover-tip"></div>
+          </div>
+        </div>
+        </div>
+      </article>
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/raphael-sobral-38766430b/">Raphael Sobral</a>.
+    </div>
+</body>
+</html>
