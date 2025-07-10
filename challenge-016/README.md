@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Click here to check it!](https://your-live-site-url.com)
+- Live Site URL: [Click here to check it!](https://raphaelsobral.github.io/studies/challenge-016/index.html)
 
 ## My process
 
