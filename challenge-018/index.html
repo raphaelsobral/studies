@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <img src="assets/images/icon-star.svg" alt="" aria-hidden="true">
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+
+      <form>
+        <div class="radios">
+          <input type="radio" name="rating" id="ratingOne" value="1">
+          <label for="ratingOne">1</label>
+          <input type="radio" name="rating" id="ratingTwo" value="2">
+          <label for="ratingTwo">2</label>
+          <input type="radio" name="rating" id="ratingThree" value="3">
+          <label for="ratingThree">3</label>
+          <input type="radio" name="rating" id="ratingFour" value="4">
+          <label for="ratingFour">4</label>
+          <input type="radio" name="rating" id="ratingFive" value="5">
+          <label for="ratingFive">5</label>
+        </div>
+        <button type="submit" disabled>Submit</button>
+      </form>
+    </div>
+   
+    <div class="thx-card off">
+      <img src="assets/images/illustration-thank-you.svg" alt="" aria-hidden="true">
+      <p id="showRating">You selected <span></span> out of 5</p>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/raphaelsobral">Raphael Sobral</a>.
+    </div>
+  </main>
+  
+</body>
+</html>

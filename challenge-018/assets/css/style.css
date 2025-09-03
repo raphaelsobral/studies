@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root {
+    --button-color: #fb7413;
+    --paragraph-color: hsl(217, 12%, 63%);
+    --input-background: hsla(0, 0%, 50%, 0.097);
+    --card-background: hsla(218, 20%, 16%, 0.79);
+    --main-background: hsl(228, 11%, 9%);
+
+    --font: 'Overpass', Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--main-background);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+
+.off {
+    display: none;
+}
+
+.card, .thx-card{
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 335px;
+}
+    
+.card img {
+    background-color: var(--input-background);
+    width: 30px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.card h1, .thx-card h1 {
+    font-size: 1.6em;
+    color: white;
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+.card p, .thx-card p {
+    color: var(--paragraph-color);
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+.radios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radios input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + label{
+        background-color: white;
+        color: var(--main-background);
+    }
+}
+
+label {
+    background-color: var(--input-background);
+    color: var(--paragraph-color);
+    padding: 10px 15px;
+    border-radius: 20px;
+    flex-basis: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin: 15px 0;
+    font-weight: 500;
+
+    &:hover {
+        background-color: var(--button-color);
+        color: var(--main-background);
+        transition-duration: 0.2s;
+    }
+}
+
+button {
+    width: 100%;
+    background-color: var(--button-color);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px 0;
+
+    &:hover {
+        background-color: white;
+        transition-duration: 0.2s;
+    }
+
+    &:disabled {
+        color: var(--main-background);
+        cursor: not-allowed;
+    }
+}
+
+.thx-card {
+    text-align: center;
+}
+
+.thx-card img{
+    display: block;
+    margin: 10px auto 20px;
+    width: 50%;
+}
+
+.thx-card #showRating{
+    background-color: var(--input-background);
+    padding: 6px 12px;
+    max-width: fit-content;
+    color: var(--button-color);
+    font-weight: 400;
+    border-radius: 20px;
+    margin: 25px auto;
+}
+
+.attribution {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: gray;
+}
+
+.attribution a {
+    color:white;
+}
